@@ -1,0 +1,119 @@
+.container{
+    width: 100%;
+    background-color: var(--darkBlue);
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+
+}
+
+.media_socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon_media:hover {
+    filter: invert(63%) sepia(75%) saturate(477%) hue-rotate(82deg) brightness(150%) contrast(88%);
+    cursor: pointer;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list a{
+    color: var(--lightGrayishBlue);
+    text-decoration: none;
+    list-style: none;
+    margin:15px 0px ;
+}
+
+.list a:hover{
+    color:var(--limeGreen);
+}
+
+.button{
+    width: 60%;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px 0px;
+    border-color: transparent;
+    color: var(--lightGrayishBlue);
+    background-image: linear-gradient(to right, var(--limeGreen), var(--brightCyan));
+    font-size: 14px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border: none;
+    
+}
+.button:hover{
+    background-image: linear-gradient(to right, #84E2A6, #7CD7E3);
+}
+
+.paragraph{
+    padding: 5px 20px;
+    width: 100%;
+    text-align: center;
+    color: var(--grayishBlue);
+    font-weight:400;
+    margin-bottom: 20px;
+}
+
+.section_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bloco_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width: 768px){
+    .container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .list{
+        max-height: 170px;
+        flex-wrap: wrap;
+        width: 300px;
+        
+    }
+    .section_1{
+        justify-content: space-around;
+        gap: 80px;
+    }
+    .bloco_1{
+        flex-direction: row;
+        gap: 30px;
+    }
+    .section_2{
+        align-items: flex-end;
+    }
+
+
+
+}
